@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.wrapper {
+  width: 976px;
+  margin: 50px auto 0 auto;
+}
+
+label {
+  display: block;
+  width: 300px;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  &.ng-invalid.ng-dirty {
+    border: 1px solid red;
+  }
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

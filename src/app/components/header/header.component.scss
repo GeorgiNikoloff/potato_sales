@@ -1,0 +1,36 @@
+@import '../../../assets/styles/variables';
+
+header {
+  border: solid 1px #979797;
+  background-image: linear-gradient(to bottom, #1566a7, #925fa7);
+  li span, li a {
+    font-family: $font-family;
+  }
+  .link-secondary {
+    border-right: 1px solid #ffffff;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 8px;
+  }
+  .nav.justify-content-center {
+    margin: 0 auto;
+    li {
+      margin: 10px;
+      a {
+        color: #ffffff;
+        font-size: 17px;
+        text-decoration: none;
+        font-family: $font-family;
+        line-height: normal;
+        &.active {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  height: 30px;
+}

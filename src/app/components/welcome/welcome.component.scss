@@ -1,0 +1,82 @@
+@import '../../../assets/styles/variables';
+
+.page {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #F2F2F2;
+  .wrapper {
+    width: 976px;
+    height: 564px;
+    margin: 0 auto;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+  }
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-family: $font-family;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    span {
+      color: #00549e;
+      font-family: $font-family;
+    }
+  }
+  .relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .space {
+    position: absolute;
+    border: 3px dashed transparent;
+    border-radius: 10px;
+    background: url("../../../assets/images/potatoes.png") no-repeat top center #a46f3d;
+    background-size: contain;
+    h4 {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 50px;
+      font-family: $font-family;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    span {
+      text-align: center;
+      display: block;
+      color: #ffffff;
+      font-size: 15px;
+    }
+    &:hover {
+      border-color: #00549e;
+      background-color: #f5a623;
+      cursor: pointer;
+      -webkit-transition: background-color 400ms linear;
+      -ms-transition: background-color 400ms linear;
+      transition: background-color 400ms linear;
+    }
+    &.link-1 {
+      width: 309px;
+      height: 150px;
+      left: 1px;
+    }
+    &.link-2 {
+      width: 309px;
+      height: 150px;
+      right: 1px;
+    }
+  }
+}

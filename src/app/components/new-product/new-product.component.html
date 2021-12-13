@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<div class="wrapper">
+    <h1>Add New Product</h1>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <label>
+        Product Name:
+        <input type="text" formControlName="productName" required>
+      </label>
+      <label>
+        Product Id:
+        <input type="text" formControlName="productId">
+      </label>
+      <label>
+        Product Manager:
+        <input type="text" formControlName="productManager">
+      </label>
+      <label>
+        Sales start date:
+        <input formControlName="salesStartDate" type="date">
+      </label>
+
+      <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    </form>
+    <hr>
+    <p>
+      Form Value: {{ profileForm.value | json }}
+    </p>
+    <p>
+      Form Status: {{ profileForm.status }}
+    </p>
+  </div>
+<app-footer></app-footer>

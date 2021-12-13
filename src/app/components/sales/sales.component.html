@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="page">
+  <div class="wrapper">
+    <table>
+      <thead>
+      <tr>
+        <th rowspan="2" colspan="1" >
+          Product ID
+        </th>
+        <th rowspan="2" colspan="1">
+          Product Name
+        </th>
+        <th rowspan="1" colspan="4" align="center" class="align-center">
+          Sales
+        </th>
+        <th rowspan="2" colspan="1" >
+          Total sales
+        </th>
+      </tr>
+      <tr>
+        <th>2019Q1</th>
+        <th>2019Q2</th>
+        <th>2019Q3</th>
+        <th>2019Q4</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let potato of potatoSales?.data">
+        <td>{{potato?.productID}}</td>
+        <td>{{potato?.productName}}</td>
+        <td>{{potato?.salesQ1}}</td>
+        <td>{{potato?.salesQ2}}</td>
+        <td>{{potato?.salesQ3}}</td>
+        <td>{{potato?.salesQ4}}</td>
+        <td>{{getTotalPrice(potato)}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>

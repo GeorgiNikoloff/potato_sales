@@ -1,0 +1,18 @@
+@import "font";
+
+/*** Grid breakpoints ***/
+$grid-breakpoints: (
+        xs: 0,
+        sm: 567px,
+        md: 1000px,
+        lg: 1024px,
+        xl: 1200px,
+        xxl: 1900px,
+);
+
+/*** COLORS ***/
+$main-color: #000fff;
+$gray: gray;
+$gray-light: gray;
+
+$font-family: 'Lato', sans-serif;
