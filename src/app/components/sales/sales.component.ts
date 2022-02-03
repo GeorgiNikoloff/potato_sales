@@ -12,12 +12,12 @@ export class SalesComponent {
   potatoSales = potatoes;
 
   getTotalPrice(data) {
-    // let total = 0;
-    // for (const property in data) {
-    //   if (typeof(data[property]) === 'number') {
-    //     total += data[property];
-    //   }
-    // }
-    // return total;
+    let total = 0;
+    for (const property in data) {
+      if (typeof(data[property]) === 'number') {
+        total += data[property];
+      }
+    }
+    return total;
   }
 }
